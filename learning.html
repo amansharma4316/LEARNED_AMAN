@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+    <title>LearnEd</title>
+    <meta name="desciption" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header id="header">
+        <nav>
+            <div class="logo"><img src="images/icon/logo.png" alt="logo"></div>
+
+            <div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+            <a class="get-started" href="login.html">Get Started</a>
+            <img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+        </nav>
+        <div class="head-container">
+            <div class="quote">
+                <p>Online education is like a rising tide, it's going to lift all boats.</p>
+
+
+            </div>
+            <div class="svg-image">
+                <img src="images/extra/learning.jpg" alt="svg">
+            </div>
+        </div>
+        <div class="side-menu" id="side-menu">
+            <div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+            <div class="user">
+                <img src="images/creator/Aman.jpg" alt="Username">
+                <p>Aman Sharma</p>
+            </div>
+            <ul>
+                <li><a href="#about_section">About</a></li>
+                <li><a href="#portfolio_section">Portfolio</a></li>
+                <li><a href="#team_section">Team</a></li>
+                <li><a href="#services_section">Services</a></li>
+                <li><a href="#contactus_section">Contact</a></li>
+                <li><a href="#feedBACK">Feedback</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!-- LEARNING -->
+    <div class="service-swipe">
+        <div class="diffSection" id="services_section">
+            <center>
+                <p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">LEARNING</p>
+            </center>
+        </div>
+        <a href="computer_courses.html">
+            <div class="s-card"><img src="images/icon/computer-courses.png">
+                <p>Free Online Computer Courses</p>
+            </div>
+        </a>
+        <a href="jee.html">
+            <div class="s-card"><img src="images/icon/brainbooster.png">
+                <p>Building Concepts for Competitive Exams</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="s-card"><img src="images/icon/online-tutorials.png">
+                <p>Online Video Lectures</p>
+            </div>
+        </a>
+        <a href="sample_papers.html">
+            <div class="s-card"><img src="images/icon/papers.jpg">
+                <p>Sample Papers of Various Competitive Exams</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="s-card"><img src="images/icon/p3.png">
+                <p>Performance and Ranking Report</p>
+            </div>
+        </a>
+        <a href="#contactus_section">
+            <div class="s-card"><img src="images/icon/discussion.png">
+                <p>Discussion with Our Tutors & Mentors</p>
+            </div>
+        </a>
+        <a href="quiz.html">
+            <div class="s-card"><img src="images/icon/q1.png">
+                <p>Daily Brain Teasing Questions to Improve IQ</p>
+            </div>
+        </a>
+        <a href="#contactus_section">
+            <div class="s-card"><img src="images/icon/help.png">
+                <p>24x7 Online Support</p>
+            </div>
+        </a>
+    </div>
+
+
+</body>
+
+</html>
